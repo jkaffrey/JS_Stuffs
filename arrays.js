@@ -18,3 +18,6 @@ console.log(numerics[5]);
 
 console.log(typeof {});
 console.log(typeof []);
+
+console.log(Array.isArray([]));
+console.log(Array.isArray({}));
