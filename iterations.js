@@ -65,3 +65,13 @@ for (car in myCars) {
 
   console.log(myCars[car]);
 }
+
+var car;
+for (car in myCars) {
+
+  console.log(myCars[car]);
+  for (var i = 1; i < myCars[car].length; i++){
+
+    console.log(myCars[car][i]);
+  }
+}
