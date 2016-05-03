@@ -20,6 +20,9 @@ personDiagonal["gender"] = "male";
 personDiagonal["age"] = 31;
 personDiagonal["clothing"] = ["shirt", "shirt2", "pants"];
 
+personDiagonal["firstName"], personDiagonal["gender"] = "Testing Bobby";
+console.log("Assignment: " + personDiagonal.firstName);
+
 var tmpName = personAcross.firstName;
 personAcross.firstName = personNext.firstName;
 personNext.firstName = tmpName;
