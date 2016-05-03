@@ -5,6 +5,7 @@ var people = {
     {
       user_id: 1,
       name: "Chris Rivers",
+      age: 22,
       mention_name: "chris",
       email: "chris@hipchat.com",
       title: "Developer",
@@ -19,6 +20,7 @@ var people = {
     {
       user_id: 3,
       name: "Peter Curley",
+      age: 57,
       mention_name: "pete",
       email: "pete@hipchat.com",
       title: "Designer",
@@ -33,6 +35,7 @@ var people = {
     {
       user_id: 5,
       name: "Garret Heaton",
+      age: 32,
       mention_name: "garret",
       email: "garret@hipchat.com",
       title: "Co-founder",
@@ -47,11 +50,33 @@ var people = {
   ]
 };
 
-console.log(people.users[0].email);
+// console.log(people.users[0].email);
+// for (var i = 0; i < people.users.length; i++) {
+//
+//   if (people.users[i].user_id === 5)
+//     console.log(people.users[i].title);
+// }
+//
+// console.log(people.users[0].user_id);
+
+var agesTotal = 0;
 for (var i = 0; i < people.users.length; i++) {
 
-  if (people.users[i].user_id === 5)
-    console.log(people.users[i].title);
+  console.log("----------------------");
+  //console.log(Object.keys(people.users[i]));
+  Object.keys(people.users[i]).forEach(function (key, index) {
+
+    if (key === 'user_id' || key === 'name' || key === 'age' || key === 'email' || key === 'title' || key === 'photo_url') {
+
+      console.log(key + ":" + people.users[i][key]);
+    }
+
+    if (key === 'age') {
+
+      agesTotal += people.users[i][key];
+      //peopleCnt++;
+    }
+  });
 }
 
-console.log(people.users[0].user_id);
+console.log("Average Age: " + (agesTotal / people.users.length));
