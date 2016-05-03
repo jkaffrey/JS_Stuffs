@@ -13,7 +13,8 @@ if (cash >= 200) {
 
 console.log(hold);
 
-for (var i = 0; i < 10; i++) {
+var start = 10;
+for (var i = 0; i < start; i++) {
 
-  console.log((i + 1) + " " + (10 - i));
+  console.log((i + 1) + " " + (start - i));
 }
