@@ -53,3 +53,11 @@ var elephant = {
 
 console.log("Square has an area? " + square.hasOwnProperty("area"));
 console.log("Elephant has an area? " + elephant.hasOwnProperty("area"));
+
+var beer = {
+  name: 'Dales\' Pale Ale',
+  type: 'Pale Ale',
+  delicious: true
+};
+
+console.log(Object.keys(beer));
