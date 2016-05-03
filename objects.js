@@ -39,3 +39,17 @@ var user = {
 console.log("Password: " + user.password);
 delete user.password;
 console.log("And now: " + user.password);
+
+var square = {
+  width: 5,
+  height: 5,
+  area: 25
+};
+
+var elephant = {
+  weight: 2000,
+  age: 12
+};
+
+console.log("Square has an area? " + square.hasOwnProperty("area"));
+console.log("Elephant has an area? " + elephant.hasOwnProperty("area"));
