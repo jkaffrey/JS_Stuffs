@@ -15,3 +15,6 @@ numerics[5] = numerics[2];
 
 console.log(numerics);
 console.log(numerics[5]);
+
+console.log(typeof {});
+console.log(typeof []);
