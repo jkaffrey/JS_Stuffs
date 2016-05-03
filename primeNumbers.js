@@ -36,5 +36,5 @@ function getAllFactorsFor(remainder) {
 }
 
 var toFind = 600851475143;
+console.log(getAllFactorsFor(toFind));
 console.log(getAllFactorsFor(toFind)[getAllFactorsFor(toFind).length - 1]);
-//primeN(10);
